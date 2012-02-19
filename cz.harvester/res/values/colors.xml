@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="text_color_default">#000000</color>	
+    <color name="text_color_grey">#A2A2A2</color>
+    <color name="text_color_dark_grey">#717171</color>
+    <color name="text_color_green">#429D27</color>
+    <color name="text_color_red">#DD2354</color>
+    <color name="text_color_yellow">#FAD00C</color>
+    <color name="text_color_orange">#F68600</color>
+    <color name="text_color_blue">#0069cf</color>
+    <color name="light_blue">#A0CDE1EF</color>
+    <color name="light_blue_opaque">#FFCDE1EF</color>
+    <color name="dashboad_text_blue">#398AC1</color>
+    <color name="grey_list_item">#DEDEDE</color>
+    <color name="grey_list_item_transparent">#11000000</color>
+    <color name="dark_grey_list_item">#BBBBBB</color>
+    
+    <color name="transparent">#00000000</color>
+     
+</resources>

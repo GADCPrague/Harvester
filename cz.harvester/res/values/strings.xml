@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Harvester</string>
+    
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="fatal_error">Fatal error</string>
+    <string name="unknown_warning">Unknown warning</string>
+
+</resources>

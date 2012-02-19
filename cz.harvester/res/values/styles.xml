@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme" parent="android:Theme.Light">
+	    <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        
+        <item name="gdQuickActionBarStyle">@style/GreenDroid.Widget.QuickAction.Bar</item>
+		<item name="gdQuickActionBarItemStyle">@style/GreenDroid.Widget.QuickAction.Bar.Item</item>
+	</style>
+	
+	<style name="Theme.Splash" parent="Theme">
+	
+	    <!--  <item name="android:windowBackground">@drawable/logo_circlegate</item>  -->
+	    <item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+	
+	</style>
+		
+	<style name="TextAppereance">
+		
+	</style>
+	
+	<style name="TextAppereance.XSmall">
+		<item name="android:textSize">@dimen/text_size_xsmall</item>
+	</style>
+	
+	<style name="TextAppereance.XSmall.Bold">
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="TextAppereance.Small">
+		<item name="android:textSize">@dimen/text_size_small</item>
+	</style>
+	
+	<style name="TextAppereance.Small.Bold">
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="TextAppereance.Medium">
+		<item name="android:textSize">@dimen/text_size_medium</item>
+	</style>
+	
+	<style name="TextAppereance.Medium.Bold">
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="TextAppereance.Medium.Grey">
+		<item name="android:textColor">@color/text_color_grey</item>
+	</style>
+	
+	<style name="TextAppereance.Large">
+		<item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+	
+	<style name="TextAppereance.Large.Bold">
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	
+	<!--  WIDGET UPPER CAPTION ************************* -->
+    
+    <style name="WidgetUpperCaption" parent="TextAppereance.Small.Bold">
+    	<item name="android:singleLine">true</item>
+    	<item name="android:ellipsize">end</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_marginLeft">@dimen/widget_upper_caption_margin_left</item>
+    	<item name="android:layout_marginTop">@dimen/widget_upper_caption_margin_top</item>
+    	<item name="android:layout_marginBottom">@dimen/widget_upper_caption_margin_bottom</item>
+    </style>
+	
+	
+	<!-- ACTION BAR *************************** -->
+	
+	<style name="ActionBarButton">
+        <item name="android:layout_width">@dimen/action_bar_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/action_bar_button</item>
+    </style>
+
+    <style name="ActionBarSeparator">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/action_bar_separator</item>
+    </style>
+
+    <style name="ActionBarText" parent="TextAppereance.Large.Bold">
+    	<item name="android:singleLine">true</item>
+    	<item name="android:ellipsize">end</item>
+        <item name="android:id">@+id/action_bar_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/action_bar_text_padding_left_right</item>
+        <item name="android:paddingRight">@dimen/action_bar_text_padding_left_right</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <!-- LIST VIEW HEADER -->
+    <style name="ListViewHeader" parent="TextAppereance.Small.Bold">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+                
+    <!-- GreenDroid -->
+    
+    <style name="GreenDroid" />
+	<style name="GreenDroid.Widget" />
+	
+	<style name="GreenDroid.Widget.QuickAction" />
+	<style name="GreenDroid.Widget.QuickAction.Bar" />
+	<style name="GreenDroid.Widget.QuickAction.Item">
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:paddingRight">5dp</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:drawablePadding">0dp</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColor">#333</item>
+	</style>
+	<style name="GreenDroid.Widget.QuickAction.Bar.Item" parent="@style/GreenDroid.Widget.QuickAction.Item">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:minWidth">80dp</item>
+		<item name="android:background">@drawable/gd_quick_action_bar_item</item>
+	</style>
+	<style name="GreenDroid.Widget.QuickAction.Grid.Item" parent="@style/GreenDroid.Widget.QuickAction.Item">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">65dp</item>
+	</style>
+	
+	<!-- PopDownMenu -->
+	<style name="GreenDroid.Animation" />
+	
+	<style name="GreenDroid.Animation.PopDown" />
+	<style name="GreenDroid.Animation.PopDown.Left">
+		<item name="@android:windowEnterAnimation">@anim/gd_grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/gd_shrink_from_bottomright_to_topleft</item>
+	</style>
+	<style name="GreenDroid.Animation.PopDown.Right">
+		<item name="@android:windowEnterAnimation">@anim/gd_grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/gd_shrink_from_bottomleft_to_topright</item>
+	</style>
+	<style name="GreenDroid.Animation.PopDown.Center">
+		<item name="@android:windowEnterAnimation">@anim/gd_grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/gd_shrink_from_bottom</item>
+	</style>
+	
+	<style name="GreenDroid.Animation.PopUp" />
+	<style name="GreenDroid.Animation.PopUp.Left">
+		<item name="@android:windowEnterAnimation">@anim/gd_grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/gd_shrink_from_topright_to_bottomleft</item>
+	</style>
+	<style name="GreenDroid.Animation.PopUp.Right">
+		<item name="@android:windowEnterAnimation">@anim/gd_grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/gd_shrink_from_topleft_to_bottomright</item>
+	</style>
+	<style name="GreenDroid.Animation.PopUp.Center">
+		<item name="@android:windowEnterAnimation">@anim/gd_grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/gd_shrink_from_top</item>
+	</style>
+
+</resources>

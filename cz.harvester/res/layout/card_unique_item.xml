@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <FrameLayout 
+		android:id="@+id/card"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dp"
+		    android:layout_marginTop="15dp"
+		    android:paddingBottom="15dp">
+
+	    <ImageView
+	        android:id="@+id/picture"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:scaleType="fitXY"
+	    	android:layout_gravity="center"/>
+	    	
+	    <ImageView
+	        android:id="@+id/overlay"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:scaleType="fitXY"
+	    	android:src="@drawable/btn_image_frame"
+	    	android:layout_gravity="center"/>
+	
+	</FrameLayout>
+   <!--  
+    <include layout="@layout/card_layout"
+        android:id="@+id/card"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+    -->
+   <!--   
+        <ImageView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:scaleType="fitXY"
+    	android:layout_gravity="center"
+    	android:src="@drawable/btn_image_frame"
+    	android:clickable="true"/>
+    	  -->
+     
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/card"
+    	android:layout_alignParentTop="true"
+    	android:text="Text1"
+    	android:layout_marginLeft="25dp"
+		    android:layout_marginTop="15dp"
+		    android:textSize="16sp"
+			    android:textStyle="bold"
+			    
+			    android:textColor="#012F00"/>
+    
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/card"
+    	android:layout_alignParentBottom="true"
+    	android:text="Text2"
+    	android:layout_marginLeft="15dp"
+		android:paddingBottom="35dp"
+		android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#4EA921"/>
+
+    
+
+</RelativeLayout>

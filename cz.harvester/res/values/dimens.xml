@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="balloon_bottom_offset">25dp</dimen>
+
+	<!-- Text size -->
+	<dimen name="text_size_xsmall">11sp</dimen>
+	<dimen name="text_size_small">13sp</dimen>
+	<dimen name="text_size_medium">16sp</dimen>
+	<dimen name="text_size_large">18sp</dimen>
+	<dimen name="text_size_xlarge">20sp</dimen>
+		
+	<dimen name="text_size_trip_name_large">16sp</dimen>
+	<dimen name="text_size_trip_name_small">11sp</dimen>
+	
+	<!-- WidgetUpperCaption -->
+	<dimen name="widget_upper_caption_margin_left">0dp</dimen>
+	<dimen name="widget_upper_caption_margin_top">0dp</dimen>
+	<dimen name="widget_upper_caption_margin_bottom">-1dp</dimen>
+	
+	<!-- ActionBar -->
+	<dimen name="action_bar_height">48dp</dimen>
+	<dimen name="action_bar_text_padding_left_right">12dp</dimen>
+	<dimen name="action_bar_text_padding_left_right_narrow">6dp</dimen>
+	        
+    <!-- GreenDroid -->
+    <dimen name="gd_arrow_offset">5dp</dimen>
+        
+</resources>

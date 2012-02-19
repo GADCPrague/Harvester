@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#F2F2F2">
+
+    <cz.harvester.widget.ActionBar
+    	android:id="@+id/actionbar"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"/>
+    
+     <TextView
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/bar_top"
+    	android:text="Card detail"
+    	android:gravity="center_vertical"
+    	android:paddingLeft="15dp"
+    	android:textStyle="bold"
+    	android:textColor="#fff" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+    
+	    <FrameLayout 
+			android:id="@+id/card"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginTop="15dp">
+	
+		    <ImageView
+		        android:id="@+id/picture"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:scaleType="fitXY"
+		    	android:layout_gravity="center"/>
+		    	
+		    <ImageView
+		        android:id="@+id/overlay"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:scaleType="fitXY"
+		    	android:src="@drawable/btn_image_frame"
+		    	android:layout_gravity="center"/>
+		
+		</FrameLayout>
+		
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginTop="25dp"
+		    android:textSize="20sp"
+		    android:text="Titulek"
+		    android:textColor="#123D00"
+		    android:textStyle="bold"/>
+	
+    </LinearLayout>
+    
+    <TableLayout 
+        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="1"
+		    android:shrinkColumns="1"
+		    android:layout_marginTop="15dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp">
+	    
+        <TableRow>
+            <TextView
+		        android:layout_width="wrap_content"
+			    android:layout_height="25dp"
+			    android:text="Number in set"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#4EA921"/>
+            
+            <TextView
+                android:id="@+id/number"
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:gravity="right"
+			    android:text="3"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#012F00"/>
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+		        android:layout_width="wrap_content"
+			    android:layout_height="25dp"
+			    android:text="Value"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#4EA921"/>
+            
+            <TextView
+                android:id="@+id/value"
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:gravity="right"
+			    android:text="Rare"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#012F00"/>
+        </TableRow>
+        
+            
+        <TableRow>
+            <TextView
+		        android:layout_width="wrap_content"
+			    android:layout_height="25dp"
+			    android:text="Received from"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#4EA921"/>
+            
+            <TextView
+                android:id="@+id/got_from"
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:gravity="right"
+			    android:text="3"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#012F00"/>
+        </TableRow>
+        
+            
+        <TableRow>
+            <TextView
+		        android:layout_width="wrap_content"
+			    android:layout_height="25dp"
+			    android:text="Received when"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#4EA921"/>
+            
+            <TextView
+                android:id="@+id/got_when"
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:gravity="right"
+			    android:text="3"
+			    android:textSize="16sp"
+			    android:textStyle="bold"
+			    android:textColor="#012F00"/>
+        </TableRow>
+	    
+    </TableLayout>
+    
+    <Button
+        android:id="@+id/send_button"
+        android:layout_height="wrap_content"
+	    android:layout_width="150dp"
+	    android:text="Send card..."
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="15dp"/>
+    
+    
+</LinearLayout>
