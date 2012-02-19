@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <!-- 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp" >
+     -->
+
+    <TextView
+		android:id="@+id/driver_id_caption"
+		style="@style/WidgetUpperCaption"
+		android:text="Nickname"/>
+    
+    <EditText
+		android:id="@+id/nick_edit_text"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="6dp"/>
+    
+    <TextView
+		android:id="@+id/password_caption"
+		style="@style/WidgetUpperCaption"
+		android:text="Password"/>
+    
+    <EditText
+		android:id="@+id/password_edit_text"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="6dp"
+	    android:password="true"
+	    android:saveEnabled="false"/>"
+	    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	     <Button
+	        android:id="@+id/register_button"
+	        android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="Register"
+		    android:enabled="false" />
+	    
+	     <Button
+	        android:id="@+id/login_button"
+	        android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="15dp"
+		    android:text="Login"
+		    android:enabled="false" />
+	</LinearLayout>
+    
+   
+
+<!--  </LinearLayout>  -->
+</merge>
